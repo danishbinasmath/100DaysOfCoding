@@ -3,7 +3,7 @@ import java.util.*;
 
 public class Majority_Element_II {
     //Method 1: HashMap
-    class Solution {
+    class Solution1 {
         public List<Integer> majorityElement(int[] nums) {
             HashMap<Integer, Integer> map = new HashMap<>();
 
@@ -32,7 +32,8 @@ public class Majority_Element_II {
 
 
     //Method 2: Boyer-Moore Majority Voting Algorithm
-    class Solution {
+    class Solution2
+    {
         public List<Integer> majorityElement(int[] nums) {
             List<Integer> ans = new ArrayList<>();
 
@@ -73,20 +74,4 @@ public class Majority_Element_II {
 
         }
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
