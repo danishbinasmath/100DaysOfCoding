@@ -1,0 +1,16 @@
+package Day96;
+
+public class Average_Salary_Excluding_the_Minimum_and_Maximum_Salary {
+    class Solution {
+        public double average(int[] salary) {
+            double sum = 0d;
+            int M = Integer.MIN_VALUE, m = Integer.MAX_VALUE;
+            for (int s : salary) {
+                m = Math.min(m, s);
+                M = Math.max(M, s);
+                sum += s;
+            }
+            return (sum - m - M) / (salary.length - 2);
+        }
+    }
+}
