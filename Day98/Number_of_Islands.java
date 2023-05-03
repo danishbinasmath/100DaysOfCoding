@@ -35,17 +35,4 @@ public class Number_of_Islands {
             return 1;
         }
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
