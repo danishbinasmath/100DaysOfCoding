@@ -1,5 +1,8 @@
 package Day133;
 
+//Time complexity: O(n)
+//Space complexity: O(1)
+
 public class Minimum_Flips_to_Make_a_OR_b_Equal_to_c {
     class Solution {
         public int minFlips(int a, int b, int c) {
