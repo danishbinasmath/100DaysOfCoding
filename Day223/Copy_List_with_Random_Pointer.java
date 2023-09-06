@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class Copy_List_with_Random_Pointer {
     class Solution {
-        Map<Node, Node> map = new HashMap();
+        Map<Node, Node> map = new HashMap<>();
         public Node copyRandomList(Node head) {
             if (head == null)
                 return null;

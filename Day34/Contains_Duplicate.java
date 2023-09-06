@@ -1,5 +1,7 @@
 package Day34;
 
+import java.util.HashSet;
+
 public class Contains_Duplicate {
     // Time complexity: O(n)
     // Space complexity: O(n)

@@ -1,5 +1,8 @@
 package Day62;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+
 public class Intersection_of_Two_Arrays_II {
     public class Solution {
         public int[] intersect(int[] nums1, int[] nums2) {
