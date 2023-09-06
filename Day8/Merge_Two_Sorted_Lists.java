@@ -1,7 +1,5 @@
 package Day8;
 
-import Day6.Delete_Node_in_a_Linked_List;
-
 public class Merge_Two_Sorted_Lists  {
     //      Definition for singly-linked list.
     public class ListNode {

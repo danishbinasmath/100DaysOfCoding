@@ -46,7 +46,9 @@ public class Shortest_Path_in_Binary_Matrix {
 
             return -1;
         }
-    }class Solution {
+    }
+    
+    class Solution2 {
         private int dir[][] = new int[][]{{0,1},{0,-1},{1,0},{-1,0},{1,-1},{-1,1},{-1,-1},{1,1}};
 
         public int shortestPathBinaryMatrix(int[][] grid) {
