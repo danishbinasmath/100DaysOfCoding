@@ -17,7 +17,7 @@ public class Sort_Items_by_Groups_Respecting_Dependencies {
                 for (int fromItem : fromItems) {
                     int fromGroup = group[fromItem];
                     if(fromGroup != toGroup) {
-                        groupGraph.computeIfAbsent(fromGroup, x->new ArrayList()).add(toGroup);
+                        groupGraph.computeIfAbsent(fromGroup, x->new ArrayList<>()).add(toGroup);
                         groupsIndegree[toGroup]++;
                     }
                 }
@@ -28,7 +28,7 @@ public class Sort_Items_by_Groups_Respecting_Dependencies {
             for (int i=0;i<n;i++) {
                 List<Integer> items = beforeItems.get(i);
                 for (Integer item : items) {
-                    itemGraph.computeIfAbsent(item, x->new ArrayList()).add(i);
+                    itemGraph.computeIfAbsent(item, x->new ArrayList<>()).add(i);
                     itemsIndegree[i]++;
                 }
             }
@@ -36,7 +36,7 @@ public class Sort_Items_by_Groups_Respecting_Dependencies {
 
         private List<Integer> topologicalSortUtil(Map <Integer, List<Integer>> graph, int[] indegree, int n) {
             List <Integer> list = new ArrayList<Integer>();
-            Queue <Integer> queue = new LinkedList();
+            Queue <Integer> queue = new LinkedList<>();
             for (int key : graph.keySet()) {
                 if(indegree[key] == 0) {
                     queue.add(key);
@@ -54,12 +54,12 @@ public class Sort_Items_by_Groups_Respecting_Dependencies {
                     }
                 }
             }
-            return n == 0 ? list : new ArrayList();
+            return n == 0 ? list : new ArrayList<>();
         }
 
         public int[] sortItems(int n, int m, int[] group, List<List<Integer>> beforeItems) {
-            groupGraph = new HashMap();
-            itemGraph = new HashMap();
+            groupGraph = new HashMap<>();
+            itemGraph = new HashMap<>();
 
             // Each item belongs to a group. If an item doesn't have a group it forms it's own isolated group.
             for (int i=0;i<group.length;i++) {
@@ -67,11 +67,11 @@ public class Sort_Items_by_Groups_Respecting_Dependencies {
             }
 
             for (int i=0;i<m;i++) {
-                groupGraph.put(i, new ArrayList());
+                groupGraph.put(i, new ArrayList<>());
             }
 
             for (int i=0;i<n;i++) {
-                itemGraph.put(i, new ArrayList());
+                itemGraph.put(i, new ArrayList<>());
             }
 
             groupsIndegree = new int[m];
@@ -92,16 +92,16 @@ public class Sort_Items_by_Groups_Respecting_Dependencies {
             if(groupsList.size() == 0 || itemsList.size() == 0) return new int[0];
 
             // This Map holds relative order of items in the same group computed in the loop below.
-            Map<Integer, List<Integer>> groupsToItems = new HashMap();
+            Map<Integer, List<Integer>> groupsToItems = new HashMap<>();
 
             for (Integer item : itemsList) {
-                groupsToItems.computeIfAbsent(group[item], x->new ArrayList()).add(item);
+                groupsToItems.computeIfAbsent(group[item], x->new ArrayList<>()).add(item);
             }
 
             int[] ans = new int[n];
             int idx = 0;
             for (Integer grp : groupsList) {
-                List <Integer> items = groupsToItems.getOrDefault(grp, new ArrayList());
+                List <Integer> items = groupsToItems.getOrDefault(grp, new ArrayList<>());
                 for (Integer item : items) {
                     ans[idx++] = item;
                 }

@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class Extra_Characters_in_a_String {
     class TrieNode {
-        Map<Character, TrieNode> children = new HashMap();
+        Map<Character, TrieNode> children = new HashMap<>();
         boolean isWord = false;
     }
 
