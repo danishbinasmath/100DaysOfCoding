@@ -7,8 +7,8 @@ import java.util.List;
 public class Number_of_Flowers_in_Full_Bloom {
     class Solution {
         public int[] fullBloomFlowers(int[][] flowers, int[] people) {
-            List<Integer> starts = new ArrayList();
-            List<Integer> ends = new ArrayList();
+            List<Integer> starts = new ArrayList<>();
+            List<Integer> ends = new ArrayList<>();
 
             for (int[] flower : flowers) {
                 starts.add(flower[0]);
