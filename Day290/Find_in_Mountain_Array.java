@@ -7,7 +7,7 @@ public class Find_in_Mountain_Array {
   // You should not implement it, or speculate about its implementation
   interface MountainArray {
       public int get(int index) ;
-      public int length() ;
+      public int length() ;    
   }
  
 class Solution {

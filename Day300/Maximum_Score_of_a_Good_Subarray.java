@@ -25,7 +25,7 @@ public class Maximum_Score_of_a_Good_Subarray {
             left[i] = currMin;
         }
         
-        List<Integer> right = new ArrayList();
+        List<Integer> right = new ArrayList<>();
         currMin = Integer.MAX_VALUE;
         for (int i = k; i < n; i++) {
             currMin = Math.min(currMin, nums[i]);
