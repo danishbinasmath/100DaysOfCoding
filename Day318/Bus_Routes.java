@@ -1,6 +1,8 @@
+import java.util.*;
+
 public class Bus_Routes {
     class Solution {
-        List<List<Integer>> adjList = new ArrayList();
+        List<List<Integer>> adjList = new ArrayList<>();
     
         // Iterate over each pair of routes and add an edge between them if there's a common stop.
         void createGraph(int[][] routes) {
@@ -57,7 +59,7 @@ public class Bus_Routes {
     
             for (int i = 0; i < routes.length; ++i) {
                 Arrays.sort(routes[i]);
-                adjList.add(new ArrayList());
+                adjList.add(new ArrayList<>());
             }
     
             createGraph(routes);

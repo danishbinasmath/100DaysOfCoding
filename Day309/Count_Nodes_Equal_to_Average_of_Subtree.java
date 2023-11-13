@@ -1,3 +1,5 @@
+import java.util.AbstractMap.SimpleEntry;
+
 public class Count_Nodes_Equal_to_Average_of_Subtree {
 
     // Definition for a binary tree node.
@@ -23,14 +25,14 @@ public class Count_Nodes_Equal_to_Average_of_Subtree {
     class Solution {
         int count = 0;
 
-        Pair<Integer, Integer> postOrder(TreeNode root) {
+        SimpleEntry<Integer, Integer> postOrder(TreeNode root) {
             if (root == null) {
-                return new Pair(0, 0);
+                return new SimpleEntry<>(0, 0);
             }
 
             // First iterate over left and right subtrees.
-            Pair<Integer, Integer> left = postOrder(root.left);
-            Pair<Integer, Integer> right = postOrder(root.right);
+            SimpleEntry<Integer, Integer> left = postOrder(root.left);
+            SimpleEntry<Integer, Integer> right = postOrder(root.right);
 
             int nodeSum = left.getKey() + right.getKey() + root.val;
             int nodeCount = left.getValue() + right.getValue() + 1;
@@ -41,7 +43,7 @@ public class Count_Nodes_Equal_to_Average_of_Subtree {
             }
 
             // Return the sum of nodes and the count in the subtree.
-            return new Pair(nodeSum, nodeCount);
+            return new SimpleEntry<>(nodeSum, nodeCount);
         }
 
         public int averageOfSubtree(TreeNode root) {

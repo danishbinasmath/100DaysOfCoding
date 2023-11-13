@@ -1,3 +1,6 @@
+import java.util.Arrays;
+import java.util.Comparator;
+
 public class Sort_Integers_by_The_Number_of_1_Bits {
     class Solution {
         public int[] sortByBits(int[] arr) {
