@@ -1,3 +1,5 @@
+package Day296;
+
 public class Power_of_Four {
     class Solution {
         public boolean isPowerOfFour(int n) {
