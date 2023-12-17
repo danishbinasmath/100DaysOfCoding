@@ -1,3 +1,7 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 public class Arithmetic_Subarrays {
     class Solution {
         public Boolean check(int[] arr) {
@@ -14,7 +18,7 @@ public class Arithmetic_Subarrays {
         }
         
         public List<Boolean> checkArithmeticSubarrays(int[] nums, int[] l, int[] r) {
-            List<Boolean> ans = new ArrayList();
+            List<Boolean> ans = new ArrayList<>();
             for (int i = 0; i < l.length; i++) {
                 int[] arr = new int[r[i] - l[i] + 1];
                 for (int j = 0; j < arr.length; j++) {
