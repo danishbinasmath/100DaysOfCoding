@@ -1,5 +1,7 @@
 package Day354;
 
+import java.util.Arrays;
+
 public class Widest_Vertical_Area_Between_Two_Points_Containing_No_Points {
     class Solution {
         public int maxWidthOfVerticalArea(int[][] points) {
