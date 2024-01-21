@@ -1,5 +1,7 @@
 package Day358;
 
+import java.util.Arrays;
+
 public class Minimum_Difficulty_of_a_Job_Schedule {
     public int minDifficulty(int[] jobDifficulty, int D) {
         final int N = jobDifficulty.length;
