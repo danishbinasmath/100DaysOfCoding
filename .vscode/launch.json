@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Solution",
+            "request": "launch",
+            "mainClass": "Day390.Solution",
+            "projectName": "100DaysOfCoding_a76377be"
+        },
+        {
+            "type": "java",
+            "name": "Daily_Temperatures$Solution",
+            "request": "launch",
+            "mainClass": "Day390.Daily_Temperatures$Solution",
+            "projectName": "100DaysOfCoding_a76377be"
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}"
