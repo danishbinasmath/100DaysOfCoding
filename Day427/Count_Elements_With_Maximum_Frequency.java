@@ -1,5 +1,7 @@
 package Day427;
 
+import java.util.HashMap;
+
 public class Count_Elements_With_Maximum_Frequency {
     class Solution {
         public int maxFrequencyElements(int[] nums) {
