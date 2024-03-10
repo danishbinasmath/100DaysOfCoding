@@ -1,5 +1,8 @@
 package Day367;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class Arithmetic_Slices_II_Subsequence {
     class Solution {
         public int numberOfArithmeticSlices(int[] A) {
