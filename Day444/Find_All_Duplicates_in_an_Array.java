@@ -1,5 +1,9 @@
 package Day444;
 
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+
 public class Find_All_Duplicates_in_an_Array {
     class Solution {
         public List<Integer> findDuplicates(int[] nums) {
