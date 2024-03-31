@@ -1,10 +1,13 @@
 package Day447;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class Length_of_Longest_Subarray_With_at_Most_K_Frequency {
     class Solution {
         public int maxSubarrayLength(int[] nums, int k) {
             int n = nums.length;
-            Map<Integer, Integer> frequency = new HashMap();
+            Map<Integer, Integer> frequency = new HashMap<>();
             int start = 0;
             int charsWithFreqOverK = 0;
             

@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Divide_Array_Into_Arrays_With_Max_Difference {
     class Solution {
         public int[][] divideArray(int[] nums, int k) {

@@ -1,5 +1,8 @@
 package Day443;
 
+import java.util.HashSet;
+import java.util.Set;
+
 public class Find_the_Duplicate_Number {
     class Solution {
         public static int findDuplicate(int[] nums) {
